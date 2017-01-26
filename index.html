@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<title>About Me Page</title>
+</head>
+<body>
+	<div id="header">
+		<p id="name">Chase Allen Cross</p>
+		<a href="mailto:you@yourdomain.com"><p id="email">chaseacross@gmail.com</p></a>
+	</div>
+	<div class="left"></div>
+	<div class="right">
+		<h4>About Me</h4>
+		<p>I'm a student at CodeFellows in Seattle! Below are some basic facts about me</p>
+		<h4>Positions Held Hitherto</h4>
+		<ul>
+			<li>1st Vice Chair - 37th Legislative District Democrats</li>
+			<li>Assistant Manager - A Wireless (formerly Diamond Wireless)</li>
+			<li>Manager - Jet City Device Repair</li>
+			<li>Research Director - Friends of Jack Connelly</li>
+			<li>Teacher - Huntington Learning Center, Issaquah</li>
+		</ul>
+		<h4>Learning Goals</h4>
+		<p>Languages: HTML, JavaScript, CSS</p>
+		<h4>Education</h4>
+		<p>BA with Honors, Intellectual History, Western Washington University</p>
+		<ul>
+			<li>Truman Scholarship Nominee</li>
+		</ul>
+		<br>
+		<p>Graduate, Redmond High School</p>
+		<ul>
+			<li>National Merit Scholar</li>
+			<li>AP Scholar with Distinction</li>
+		</ul>
+		<br>
+		<button onclick="myFunction()">Do you want to play a game?</button>
+		<p id="demo"></p>
+		<br>
+	</div>
+	<div id="footer">
+		<p>1106 16th Ave, Apt #2 Seattle, WA 98122  425-941-9724</p>
+	</div>
+	<script>
+	function myFunction()
+	{
+// This is the opening prompt//
+		var userName = prompt('What\'s your name?')
+		alert('Hello ' + userName + '. Thanks for coming to my site!');
+// This is the first question//
+		var answerOne = prompt('What state was I born in?')
+		var myAnswerOne = 'Washington';
+		if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
+		else {alert('Wrong!')}
+// This is the second question//
+		var answerTwo = prompt('Where did I go to college?')
+		var myAnswerTwo = 'Western Washington University';
+		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
+		else {alert('Wrongo!')}
+// This is the third question//
+		var answerThree = prompt('What year was I born?')
+		var myAnswerThree = '1987';
+		if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
+		else {alert('Nope!')}
+// This is the fourth question//
+		var answerFour = prompt('Who is buried in Grant\'s tomb?')
+		var myAnswerFour = 'Grant';
+		if(answerFour === myAnswerFour) {alert('Well done!')}
+		else {alert('Swing, and a miss!')}
+	}
+	</script>
+</body>
+</html>
