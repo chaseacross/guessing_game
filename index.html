@@ -67,11 +67,15 @@
 		// var myAnswerFour = 'Grant';
 		// if(answerFour === myAnswerFour) {alert('Well done!')}
 		// else {alert('Swing, and a miss!')}
-		// This is the fifth question using a logical operator//
-		var answerFive = prompt('How old am I?')
-		if (answerFive > 29) {alert('Too old!')}
-		else if (answerFive < 29) {alert('Too young!')}
-		else {alert('Got it like the \'79 SuperSonics!')}
+// This is the fifth question using a logical operator//
+		// var answerFive = prompt('How old am I?')
+		// if (answerFive > 29) {alert('Too old!')}
+		// else if (answerFive < 29) {alert('Too young!')}
+		// else {alert('Got it like the \'79 SuperSonics!')}
+// This is the sixth question using an array//
+		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
+		var answerSix = prompt('Name a city I have lived in.')
+		if($.inArray(answerSix, placesIHaveLived) > -1) {alert("Correct!");}
 	}
 	</script>
 </body>
