@@ -75,8 +75,10 @@
 // This is the sixth question using an array//
 		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
 		var answerSix = prompt('Name a city I have lived in.')
-		if($.inArray(answerSix, placesIHaveLived) > -1) {alert("Correct!");}
+		if (placesIHaveLived.indexOf(answerSix) > -1){alert('Well played!')}
+		else {alert('Nope!')}
 	}
+
 	</script>
 </body>
 </html>
