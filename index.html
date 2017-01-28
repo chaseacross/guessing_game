@@ -44,39 +44,46 @@
 	</div>
 	<script>
 	function myFunction()
+	// This is the username prompt for the guessing game //
 	{
 		var userName = prompt('What\'s your name?')
 		alert('Hello ' + userName + '. Thanks for coming to my site!');
 // This is the first question//
-		// var answerOne = prompt('What state was I born in?')
-		// var myAnswerOne = 'Washington';
-		// if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
-		// else {alert('Wrong!')}
+		var answerOne = prompt('What state was I born in?')
+		var myAnswerOne = 'Washington';
+		if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
+		else {alert('Wrong!')}
+		console.log('Question ONE fired')
 // This is the second question//
-		// var answerTwo = prompt('Where did I go to college?')
-		// var myAnswerTwo = 'Western Washington University';
-		// if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
-		// else {alert('Wrongo!')}
+		var answerTwo = prompt('Where did I go to college?')
+		var myAnswerTwo = 'Western Washington University';
+		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
+		else {alert('Wrongo!')}
+		console.log('Question TWO fired')
 // This is the third question//
-		// var answerThree = prompt('What year was I born?')
-		// var myAnswerThree = '1987';
-		// if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
-		// else {alert('Nope!')}
+		var answerThree = prompt('What year was I born?')
+		var myAnswerThree = '1987';
+		if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
+		else {alert('Nope!')}
+		console.log('Question THREE fired')
 // This is the fourth question//
-		// var answerFour = prompt('Who is buried in Grant\'s tomb?')
-		// var myAnswerFour = 'Grant';
-		// if(answerFour === myAnswerFour) {alert('Well done!')}
-		// else {alert('Swing, and a miss!')}
+		var answerFour = prompt('Who is buried in Grant\'s tomb?')
+		var myAnswerFour = 'Grant';
+		if(answerFour === myAnswerFour) {alert('Well done!')}
+		else {alert('Swing, and a miss!')}
+		console.log('Question FOUR fired')
 // This is the fifth question using a logical operator//
-		// var answerFive = prompt('How old am I?')
-		// if (answerFive > 29) {alert('Too old!')}
-		// else if (answerFive < 29) {alert('Too young!')}
-		// else {alert('Got it like the \'79 SuperSonics!')}
+		var answerFive = prompt('How old am I?')
+		if (answerFive > 29) {alert('Too old!')}
+		else if (answerFive < 29) {alert('Too young!')}
+		else {alert('Got it like the \'79 SuperSonics!')}
+		console.log('Question FIVE fired')
 // This is the sixth question using an array//
 		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
 		var answerSix = prompt('Name a city I have lived in.')
 		if (placesIHaveLived.indexOf(answerSix) > -1){alert('Well played!')}
 		else {alert('Nope!')}
+		console.log('Question SIX fired; questions complete!')
 	}
 
 	</script>
