@@ -76,6 +76,13 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+#game_button {
+    position: absolute;
+    left: 50px;
+    top: 500px;
+
+}
+
 #footer {
 	position: relative;
 	height: 50px;
