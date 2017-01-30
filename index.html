@@ -72,18 +72,26 @@
 		if(answerFour === myAnswerFour) {alert('Well done!')}
 		else {alert('Swing, and a miss!')}
 		console.log('Question FOUR fired');
-		// This is the fifth question using a logical operator//
-		var answerFive = prompt('How old am I?')
-		if (answerFive > 29) {alert('Too old!')}
-		else if (answerFive < 29) {alert('Too young!')}
-		else {alert('Got it like the \'79 SuperSonics!')}
+		// This is the fifth question//
+		var myAnswerFive = prompt('Am I old enough to remember the 1995 Seattle Mariners baseball season? Y/N')
+		strtoLowerCase
+		var answerFive.toLowerCase() = ['Y', 'YES', 'N', 'NO'];
+		if (myAnswerFive.indexOf(answerFive) <= 1 && myAnswerFive.indexOf(answerFive) != -1) {alert('Correct!')}
+		else {alert('Nope! Try again!')}
+		}
 		console.log('Question FIVE fired');
-		// This is the sixth question using an array//
+		// This is the sixth question using a logical operator//
+		var answerSix = prompt('How old am I?')
+		if (answerSix > 29) {alert('Too old!')}
+		else if (answerSix < 29) {alert('Too young!')}
+		else {alert('Got it like the \'79 SuperSonics!')}
+		console.log('Question Six fired');
+		// This is the sixth question using an array and indexOf feature//
 		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
-		var answerSix = prompt('Name a city I have lived in.')
-		if (placesIHaveLived.indexOf(answerSix) > -1){alert('Well played!')}
+		var answerSeven = prompt('Name a city I have lived in.')
+		if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!')}
 		else {alert('Nope!')}
-		console.log('Question SIX fired; questions complete!');
+		console.log('Question SEVEN fired; questions complete!');
 	}
 	</script>
 </body>
