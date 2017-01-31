@@ -60,25 +60,29 @@
 		//This is the second question//
 		var answerTwo = prompt('Where did I go to college?')
 		var myAnswerTwo = 'Western Washington University';
-		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
+		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!');
+		questionCounter++}
 		else {alert('Wrongo!')}
 		console.log('Question TWO fired');
 		//This is the third question//
 		var answerThree = prompt('What is my father\'s name?')
 		var myAnswerThree = 'Craig';
-		if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
+		if(answerThree === myAnswerThree) {alert('That\'s a bingo!');
+		questionCounter++}
 		else {alert('Nope!')}
 		console.log('Question THREE fired');
 		//This is the fourth question//
 		var answerFour = prompt('Who is buried in Grant\'s tomb?')
 		var myAnswerFour = 'Grant';
-		if(answerFour === myAnswerFour) {alert('Well done!')}
+		if(answerFour === myAnswerFour) {alert('Well done!');
+		questionCounter++}
 		else {alert('Swing, and a miss!')}
 		console.log('Question FOUR fired');
 		//This is the fifth question//
 		var myAnswersFive = ['Y', 'YES'];
 		var answerFive = prompt('Am I old enough to remember the \'95 Mariners season?').toUpperCase();
-		if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!')}
+		if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!');
+		questionCounter++}
 		else {alert('Nope!')}
 		console.log('Question FIVE fired');
 		//This is the sixth question using a logical operator and counter//
@@ -108,7 +112,8 @@
   	// This is the seventh question using an array and indexOf feature//
 		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
 		var answerSeven = prompt('Name a city I have lived in.')
-		if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!')}
+		if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!');
+		questionCounter++}
 		else {alert('Nope!')}
 		console.log('Question SEVEN fired; questions complete!');
 		{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
