@@ -48,50 +48,63 @@
 	{
 		var userName = prompt('What\'s your name?')
 		alert('Hello ' + userName + '. Thanks for coming to my site!');
-		// This is the first question//
-		var answerOne = prompt('What state was I born in?')
-		var myAnswerOne = 'Washington';
-		if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
-		else {alert('Wrong!')}
-		console.log('Question ONE fired');
-		// This is the second question//
-		var answerTwo = prompt('Where did I go to college?')
-		var myAnswerTwo = 'Western Washington University';
-		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
-		else {alert('Wrongo!')}
-		console.log('Question TWO fired');
-		// This is the third question//
-		var answerThree = prompt('What year was I born?')
-		var myAnswerThree = '1987';
-		if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
-		else {alert('Nope!')}
-		console.log('Question THREE fired');
-		// This is the fourth question//
-		var answerFour = prompt('Who is buried in Grant\'s tomb?')
-		var myAnswerFour = 'Grant';
-		if(answerFour === myAnswerFour) {alert('Well done!')}
-		else {alert('Swing, and a miss!')}
-		console.log('Question FOUR fired');
-		//This is the fifth question//
-		var myAnswersFive = ['Y', 'YES'];
-		var answerFive = prompt('Am I old enough to remember the \'95 Mariners season?').toUpperCase();
-		if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!')}
-		else {alert('Nope!')}
-		console.log('Question FIVE fired');
-		// This is the sixth question using a logical operator//
-		//This code is currently in progress and not working//
-	// 	var answerSix
-	// 	var myAge = 29;
-	// 	var count = 0;
-	// 	while count < 4 {
-	// 		if (answerSix) {if (answerSix > myAge ) {alert( "Too old!" );}
-	// 		else {alert( "Too young!" );}
-	// 	  }
-	// 	answerSix = prompt('What is my age?');
-	// 	} while (answerSix != myAge);
-	// 	alert( 'Got it like the \'79 SuperSonics!');
-	// }
-	// This is the seventh question using an array and indexOf feature//
+		//This is the answer counter array that will log all correct/incorrect answers//
+		var correctAnswers = []
+		// //This is the first question//
+		// var answerOne = prompt('What state was I born in?')
+		// var myAnswerOne = 'Washington';
+		// if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
+		// else {alert('Wrong!')}
+		// console.log('Question ONE fired');
+		// // This is the second question//
+		// var answerTwo = prompt('Where did I go to college?')
+		// var myAnswerTwo = 'Western Washington University';
+		// if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
+		// else {alert('Wrongo!')}
+		// console.log('Question TWO fired');
+		// // This is the third question//
+		// var answerThree = prompt('What is my father\'s name?')
+		// var myAnswerThree = 'Craig';
+		// if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
+		// else {alert('Nope!')}
+		// console.log('Question THREE fired');
+		// // This is the fourth question//
+		// var answerFour = prompt('Who is buried in Grant\'s tomb?')
+		// var myAnswerFour = 'Grant';
+		// if(answerFour === myAnswerFour) {alert('Well done!')}
+		// else {alert('Swing, and a miss!')}
+		// console.log('Question FOUR fired');
+		// //This is the fifth question//
+		// var myAnswersFive = ['Y', 'YES'];
+		// var answerFive = prompt('Am I old enough to remember the \'95 Mariners season?').toUpperCase();
+		// if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!')}
+		// else {alert('Nope!')}
+		// console.log('Question FIVE fired');
+		// This is the sixth question using a logical operator and counter//
+		// var answerSix = prompt('How old am I?');
+		// var myAge = 29;
+		// var guesses = 0;
+		// if (answerSix != myAge) {
+		// 	while (guesses <= 4) {
+		// 		if (answerSix > myAge)
+		// 			{alert('Too old!')};
+		// 			guesses++;
+		// 		else if (answerSix < myAge)
+		// 			{alert('Too young!')};
+		// 			guesses++;
+		// 		}
+		// 		else if (guesses >= 4) {
+		// 			{alert('You have guessed too many times! Game over!')};
+		// 			{break};
+		// 		}
+		// 		}
+		// 	}
+		// else if (answerSix === myAge) {
+		// 		{alert('Got it like the \'79 SuperSonics!')};
+		// 		{break}
+		// 	}
+		// 	else {alert('Answer is invalid!')}
+  	// This is the seventh question using an array and indexOf feature//
 		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
 		var answerSeven = prompt('Name a city I have lived in.')
 		if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!')}
