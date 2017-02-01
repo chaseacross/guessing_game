@@ -103,7 +103,7 @@
 // var counterSix = 0;
 // while (counterSix < 4) {
 // counterSix++;
-// var answerSix = parseInt(prompt('What\'s my favorite number?'));
+// var answerSix = parseInt(prompt('What\s my age?'));
 // if (counterSix === 4) {
 // 	alert('Let\'s move on');
 // } else if (answerSix === myAge) {
@@ -115,18 +115,25 @@
 // 	alert('Too old!'); questionCounter++
 // }
 // }
-  	// This is the seventh question using an array and indexOf feature//
-		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
-		var counterSeven = 0;
-		while (counterSeven < 6) {
-var answerSeven = prompt('Name some cities I have lived in.');
-		}
-		else if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!')}
- 		else if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!');
- 		  questionCounter++}
-  		else if {alert('Nope!')}
-  		// console.log('Question SEVEN fired; questions complete!');
-  		// {alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
+  // 	// This is the seventh question using an array and indexOf feature//
+	var placesIHaveLived = ['SEATTLE', 'BELLINGHAM', 'WASHINGTON DC', 'WASHINGTON D.C.', 'Redmond'];
+	var counterSeven = 0;
+	while (counterSeven < 6) {
+		counterSeven++;
+		var answerSeven = prompt('Name a place I have lived.').toUpperCase();
+		if (counterSeven === 6) {alert('Don\'t cry, Mac -- you lost!')
+	}
+	else if (placesIHaveLived.indexOf(answerSeven) === -1) {
+		alert('Incorrect!')
+	}
+	else if (placesIHaveLived.indexOf(answerSeven) > -1) {
+		alert('It is truth!');
+		questionCounter++;
+		break;
+	}
+}
+console.log('Question SEVEN fired; questions complete!');
+{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
  	}
 	</script>
 </body>
