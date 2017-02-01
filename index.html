@@ -62,8 +62,8 @@
 		var userName = prompt('What\'s your name?')
 		alert('Hello ' + userName + '. Thanks for coming to my site!');
 		//This is the question correct/incorrect counter//
-		var questionCounter = 0;
-		//This is the first question//
+// 		var questionCounter = 0;
+// 		//This is the first question//
 // 		var myAnswersOne = ['Y', 'YES'];
 // 		var answerOne = prompt('Can I read and write?').toUpperCase();
 // 		if (myAnswersOne.indexOf(answerOne) > -1) {alert('Too easy -- yes!');
@@ -116,17 +116,18 @@
 // }
 // }
   	// This is the seventh question using an array and indexOf feature//
-	// 	var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
-	// 	var answerSeven = prompt('Name a city I have lived in.')
-	// 	var questionSevenGuesses = 0;
-	// 	while (questionSevenGuesses < 7 ) {(placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!');
-	// 	questionsCounter++}
-	// }
-	// 	else {alert('Nope!')}
-	// 	console.log('Question SEVEN fired; questions complete!');
-	// 	{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
-
-}
+		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
+		var counterSeven = 0;
+		while (counterSeven < 6) {
+var answerSeven = prompt('Name some cities I have lived in.');
+		}
+		else if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!')}
+ 		else if (placesIHaveLived.indexOf(answerSeven) > -1) {alert('Well played!');
+ 		  questionCounter++}
+  		else if {alert('Nope!')}
+  		// console.log('Question SEVEN fired; questions complete!');
+  		// {alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
+ 	}
 	</script>
 </body>
 </html>
