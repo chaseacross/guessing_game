@@ -9,7 +9,16 @@
 		<p id="name">Chase Allen Cross</p>
 		<a href="mailto:you@yourdomain.com"><p id="email">chaseacross@gmail.com</p></a>
 	</div>
-	<div class="left"></div>
+	<div class="left">
+		<br>
+		<br>
+		<p>Can Chase Cross read and write?</p>
+		<p>Can he eat six saltine crackers in under a minute?</p>
+		<p>Can he see in glorious Technicolor?</p>
+		<p>Is he a college graduate?</p>
+		<br>
+		<p>Find out by playing the guessing game below!</p>
+	</div>
 	<div class="right">
 		<h4>About Me</h4>
 		<p>I'm a student at CodeFellows in Seattle! Below are some basic facts about me</p>
@@ -35,56 +44,97 @@
 			<li>AP Scholar with Distinction</li>
 		</ul>
 		<br>
-		<button id="game_button" onclick="myFunction()">Do you want to play a game?</button>
+		<button id="game_button" onclick="guessingGame()">Do you want to play a game?</button>
 		<p id="demo"></p>
+		<br>
+		<!-- This is a link to the ordered list as required in the Lab assignment. -->
+		<a href="C:\Users\Chase\projects\CodeFellows\about_me_project\guessing_game\favoritefilms.html"
+		target="_parent"><button id="Top_Ten_Favorite_Films">Chase's Top Ten Favorite Films!</button></a>
 		<br>
 	</div>
 	<div id="footer">
 		<p>1106 16th Ave, Apt #2 Seattle, WA 98122  425-941-9724</p>
 	</div>
 	<script>
-	function myFunction()
+	function guessingGame()
 	// This is the username prompt for the guessing game //
 	{
 		var userName = prompt('What\'s your name?')
 		alert('Hello ' + userName + '. Thanks for coming to my site!');
-		// This is the first question//
-		var answerOne = prompt('What state was I born in?')
-		var myAnswerOne = 'Washington';
-		if(answerOne === myAnswerOne) {alert('You got it right. I was born in Washington!')}
-		else {alert('Wrong!')}
-		console.log('Question ONE fired');
-		// This is the second question//
-		var answerTwo = prompt('Where did I go to college?')
-		var myAnswerTwo = 'Western Washington University';
-		if(answerTwo === myAnswerTwo) {alert('You got it right! Go Vikings!')}
-		else {alert('Wrongo!')}
+		//This is the question correct/incorrect counter//
+		var questionCounter = 0;
+		//This is the first question//
+		var myAnswersOne = ['Y', 'YES'];
+		var answerOne = prompt('Can I read and write?').toUpperCase();
+		if (myAnswersOne.indexOf(answerOne) > -1) {alert('Too easy -- yes!');
+		questionCounter++}
+		else {alert('Gutterb!')}
+		console.log('No, but that\'s very funny of you!');
+		//This is the second question//
+		var myAnswersTwo = ['Y', 'YES'];
+		var answerTwo = prompt('Can I eat six saltine crackers in a minute or less?').toUpperCase();
+		if (myAnswersTwo.indexOf(answerTwo) > -1) {alert('Well played!');
+		questionCounter++}
+		else {alert('Incorrect!')}
 		console.log('Question TWO fired');
-		// This is the third question//
-		var answerThree = prompt('What year was I born?')
-		var myAnswerThree = '1987';
-		if(answerThree === myAnswerThree) {alert('That\'s a bingo!')}
-		else {alert('Nope!')}
+		//This is the third question//
+		var myAnswersThree = ['N', 'NO'];
+		var answerThree = prompt('Am I colorblind?').toUpperCase();
+		if (myAnswersThree.indexOf(answerThree) > -1) {alert('Correctamundo!');
+		questionCounter++}
+		else {alert('Wrongo!')}
 		console.log('Question THREE fired');
-		// This is the fourth question//
-		var answerFour = prompt('Who is buried in Grant\'s tomb?')
-		var myAnswerFour = 'Grant';
-		if(answerFour === myAnswerFour) {alert('Well done!')}
-		else {alert('Swing, and a miss!')}
+		//This is the fourth question//
+		var myAnswersFour = ['Y', 'YES'];
+		var answerFour = prompt('Did I go to university?').toUpperCase();
+		if (myAnswersFour.indexOf(answerFour) > -1) {alert('Correct -- go Vikings!');
+		questionCounter++}
+		else {alert('Gutterball!')}
 		console.log('Question FOUR fired');
-		// This is the fifth question using a logical operator//
-		var answerFive = prompt('How old am I?')
-		if (answerFive > 29) {alert('Too old!')}
-		else if (answerFive < 29) {alert('Too young!')}
-		else {alert('Got it like the \'79 SuperSonics!')}
-		console.log('Question FIVE fired');
-		// This is the sixth question using an array//
-		var placesIHaveLived = ['Seattle', 'Bellingham', 'Washington DC', 'Redmond'];
-		var answerSix = prompt('Name a city I have lived in.')
-		if (placesIHaveLived.indexOf(answerSix) > -1){alert('Well played!')}
+		//This is the fifth question//
+		var myAnswersFive = ['Y', 'YES'];
+		var answerFive = prompt('Am I old enough to remember the \'95 Mariners season?').toUpperCase();
+		if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!');
+		questionCounter++}
 		else {alert('Nope!')}
-		console.log('Question SIX fired; questions complete!');
+		console.log('Question FIVE fired');
+		//This is the sixth question using a logical operator and counter//
+		var myAge = 29;
+		var counterSix = 0;
+		while (counterSix < 4) {
+			counterSix++;
+			var answerSix = parseInt(prompt('What\s my age?'));
+			if (counterSix === 4) {
+				alert('Let\'s move on');
+			} else if (answerSix === myAge) {
+				alert('Got it like the \'79 SuperSonics!');
+				break;
+			} else if (answerSix < myAge) {
+				alert ('Too young!')
+			} else if (answerSix > myAge) {
+				alert('Too old!'); questionCounter++
+			}
+		}
+		// This is the seventh question using an array and indexOf feature//
+		var placesIHaveLived = ['SEATTLE', 'BELLINGHAM', 'WASHINGTON DC', 'WASHINGTON D.C.', 'Redmond'];
+		var counterSeven = 0;
+		while (counterSeven < 6) {
+			counterSeven++;
+			var answerSeven = prompt('Name a place I have lived.').toUpperCase();
+			if (counterSeven === 6) {alert('Don\'t cry, Mac -- you lost!')
+		}
+		else if (placesIHaveLived.indexOf(answerSeven) === -1) {
+			alert('Incorrect!')
+		}
+		else if (placesIHaveLived.indexOf(answerSeven) > -1) {
+			alert('It is truth!');
+			questionCounter++;
+			break;
+		}
 	}
-	</script>
+	console.log('Question SEVEN fired; questions complete!');
+	{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
+}
+</script>
 </body>
 </html>
