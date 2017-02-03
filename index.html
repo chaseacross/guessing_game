@@ -63,6 +63,7 @@
 		//This is the question correct/incorrect counter//
 		var questionCounter = 0;
 		//This is the first question//
+		function questionOne() {
 		var myAnswersOne = ['Y', 'YES'];
 		var answerOne = prompt('Can I read and write?').toUpperCase();
 		if (myAnswersOne.indexOf(answerOne) > -1) {alert('Too easy -- yes!');
@@ -70,7 +71,10 @@
 		//Question counter firing correctly//
 		else {alert('Gutterball!')}
 		console.log('No, but that\'s very funny of you!');
+	}
+	questionOne()
 		//This is the second question//
+		function questionTwo() {
 		var myAnswersTwo = ['Y', 'YES'];
 		var answerTwo = prompt('Can I eat six saltine crackers in a minute or less?').toUpperCase();
 		if (myAnswersTwo.indexOf(answerTwo) > -1) {alert('Well played!');
@@ -78,7 +82,10 @@
 		//Question counter firing correctly//
 		else {alert('Incorrect!')}
 		console.log('Question TWO fired');
+	}
+	questionTwo()
 		//This is the third question//
+		function questionThree() {
 		var myAnswersThree = ['N', 'NO'];
 		var answerThree = prompt('Am I colorblind?').toUpperCase();
 		if (myAnswersThree.indexOf(answerThree) > -1) {alert('Correctamundo!');
@@ -86,7 +93,10 @@
 		//Question counter firing correctly//
 		else {alert('Wrongo!')}
 		console.log('Question THREE fired');
+	}
+	questionThree()
 		//This is the fourth question//
+		function questionFour() {
 		var myAnswersFour = ['Y', 'YES'];
 		var answerFour = prompt('Did I go to university?').toUpperCase();
 		if (myAnswersFour.indexOf(answerFour) > -1) {alert('Correct -- go Vikings!');
@@ -94,7 +104,10 @@
 		//Question counter firing correctly//
 		else {alert('Gutterball!')}
 		console.log('Question FOUR fired');
+	}
+	questionFour()
 		//This is the fifth question//
+		function questionFive() {
 		var myAnswersFive = ['Y', 'YES'];
 		var answerFive = prompt('Am I old enough to remember the \'95 Mariners season?').toUpperCase();
 		if (myAnswersFive.indexOf(answerFive) > -1) {alert('Well played!');
@@ -102,7 +115,10 @@
 		//Question counter firing correctly//
 		else {alert('Nope!')}
 		console.log('Question FIVE fired');
+	}
+	questionFive()
 		//This is the sixth question using a logical operator and counter//
+function questionSix() {
 		var myAge = 29;
 		var counterSix = 0;
 		while (counterSix < 4) {
@@ -121,7 +137,10 @@
 				//Question counter firing correctly//
 			}
 		}
+	}
+	questionSix()
 		// This is the seventh question using an array and indexOf feature//
+function questionSeven() {
 		var placesIHaveLived = ['SEATTLE', 'BELLINGHAM', 'WASHINGTON DC', 'WASHINGTON D.C.', 'Redmond'];
 		var counterSeven = 0;
 		while (counterSeven < 6) {
@@ -140,7 +159,9 @@
 		}
 	}
 	console.log('Question SEVEN fired; questions complete!');
-	{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
+}
+questionSeven()
+{alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
 }
 </script>
 </body>
