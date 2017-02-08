@@ -13,9 +13,9 @@ function guessingGame()
     questionCounter++
   }
   //Question counter firing correctly//
-  else {alert('Gutterball!')
+  else {alert('No, but that\'s very funny of you!!')
 }
-console.log('No, but that\'s very funny of you!');
+console.log('Question ONE fired -- current score is ' + questionCounter);
 }
 questionOne()
 //This is the second question//
@@ -28,7 +28,7 @@ function questionTwo() {
 //Question counter firing correctly//
 else {alert('Incorrect!')
 }
-console.log('Question TWO fired');
+console.log('Question TWO fired -- current score is ' + questionCounter);
 }
 questionTwo()
 //This is the third question//
@@ -40,7 +40,7 @@ function questionThree() {
 }
 //Question counter firing correctly//
 else {alert('Wrongo!')}
-console.log('Question THREE fired');
+console.log('Question THREE fired -- current score is ' + questionCounter);
 }
 questionThree()
 //This is the fourth question//
@@ -53,7 +53,7 @@ function questionFour() {
 //Question counter firing correctly//
 else {alert('Gutterball!')
 }
-console.log('Question FOUR fired');
+console.log('Question FOUR fired -- current score is ' + questionCounter);
 }
 questionFour()
 //This is the fifth question//
@@ -66,7 +66,7 @@ function questionFive() {
 //Question counter firing correctly//
 else {alert('Nope!')
 }
-console.log('Question FIVE fired');
+console.log('Question FIVE fired -- current score is ' + questionCounter);
 }
 questionFive()
 //This is the sixth question using a logical operator and counter//
@@ -110,7 +110,7 @@ function questionSeven() {
     break;
   }
 }
-console.log('Question SEVEN fired; questions complete!');
+console.log('Question SEVEN fired; questions complete! Current score is ' + questionCounter);
 }
 questionSeven()
 {alert('Congratulations! You got ' + questionCounter + ' out of 7 questions correct')}
